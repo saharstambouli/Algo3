@@ -1,0 +1,29 @@
+// Ticket Pricing: Write a program that prompts the user to enter their age and then determines the price of a movie ticket based on the following criteria:
+
+// Children (age <= 12): $10
+// Teenagers (age 13-17): $15
+// Adults (age >= 18): $20
+
+
+FUNCTION Ticket-Price(age: INTEGER) : BOOLEAN
+VAR
+    Price: INTEGER ; 
+BEGIN
+    
+    Write ("How old are you"),
+    read (age),
+
+
+IF (age <= 12) THEN
+     Price = 10
+ELSE_IF (age := >= 13 and age := <= 17) THEN
+    Price = 15
+ELSE
+    Price = 20
+END_IF
+
+return Price ; 
+read (Price)
+
+
+END

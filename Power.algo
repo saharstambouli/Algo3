@@ -1,0 +1,15 @@
+FUNCTION pow(x,n:INTEGER) : INTEGER
+VAR
+   result : INTEGER;
+BEGIN
+   IF (n = 1) THEN
+       RETURN x;
+   ELSE
+       result := pow(x, n-1);
+       RETURN x* result;
+   END_IF
+END
+ 
+
+
+ 

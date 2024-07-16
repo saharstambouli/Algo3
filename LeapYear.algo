@@ -1,0 +1,28 @@
+/* Leap Year Checker: Create a function that takes a year as input and determines 
+whether it is a leap year or not. Leap years are divisible by 4, but not by 100
+ unless they are also divisible by 400. */
+
+
+
+ FUNCTION LeapYear(year:INTEGER) : BOOLEAN
+ VAR
+    set_declarations
+ BEGIN
+
+IF (year % 4 := 0 ) THEN
+    IF (year % 100 := 0) THEN
+        IF (year % 400 := 0) THEN
+            return true; 
+        ELSE
+            return false ; 
+        END_IF
+    ELSE
+        return true ; 
+    END_IF
+ELSE
+    return false ; 
+END_IF
+END
+
+
+

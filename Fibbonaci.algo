@@ -1,0 +1,9 @@
+FUNCTION fibbonacci(n: INTEGER) : INTEGER
+IF(n = 0) THEN
+   RETURN 0;
+ELSE_IF(n = 1) THEN
+   RETURN 1
+ELSE
+    RETURN fibbonacci(n - 1) + fibbonacci(n - 2)
+END_IF
+END
